@@ -68,7 +68,7 @@ class App extends Component {
   }
 
   incrementUserEntryCount = () => {
-    fetch('http://localhost:3000/increment', {
+    fetch('https://facerecog-api.onrender.com/increment', {
       method: 'put',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -88,7 +88,7 @@ class App extends Component {
 
     this.setState({ boxes: [] })
 
-      fetch('http://localhost:3000/image', {
+      fetch('https://facerecog-api.onrender.com/image', {
         method: 'put',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
